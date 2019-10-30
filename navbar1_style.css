@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.toggle{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: gray;
+    cursor: pointer;
+    z-index: 1;
+}
+.toggle:before{
+    content: 'Menu';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background: rgba(6, 3, 15, 0.582);
+    color: antiquewhite;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.toggle.active:before{
+    transform: rotate(720deg);
+    background: #3bffd5;
+    color: gray;
+}
+.overlay{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: .7;
+    background:rgba(0,0,0,.95);
+    transition: transform 0.5s;
+}
+.overlay.active{
+    transform: scale(100,100);
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1000   ;
+    visibility: hidden;
+}
+.menu.active{
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.menu ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu ul li a{
+    position: relative;
+    font-size: 48px;
+    text-decoration: none;
+    color: aliceblue;
+    margin: 20px 0;
+    display: block;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+.menu ul li a:hover{
+    color: #3bffd5;
+}
+@media(marin-top : 100px){
+    .toggle{
+        visibility: hidden;
+    }
+}

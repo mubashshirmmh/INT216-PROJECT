@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="payment_style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="home.html">
+    <div class="checkout_form">
+        <div class="card_number" id="card-container">
+            <input type="text" class="input" id="card_no" placeholder="0000 0000 0000 0000">
+        </div>   
+        <div class="card_grp">
+            <div class="expiry_date">
+                <input type="text" class="expiry_input" id="months" placeholder="00">
+                <input type="text" class="expiry_input" id="years" placeholder="00">
+            </div>
+            <div class="cvv">
+                <input type="text" class="cvv_input" id="cvv" placeholder="000">
+                <div class="cvv-img">?
+                    <div class="img">
+                        <img src="images/cvv.png" alt="cvv">
+                    </div>
+                </div>
+            </div>
+        </div>
+         <input class="btn" type="submit" value="Pay" onclick="return validate()">
+    </div>
+    </form>
+    <script>
+        function validate(){
+            var card_no = document.getElementById("card_no");
+            var months = document.getElementById("months");
+            var years = document.getElementById("years");
+            var cvv = document.getElementById("cvv");
+            var status=false;
+            var id=Math.floor(Math.random()*99999999999);
+            var arrival=Math.floor(Math.random()*20);
+            if(card_no.value.trim()==""||months.value.trim()==""||years.value.trim()==""||cvv.value.trim()==""){
+                alert("Fields cannot be empty");
+                return false;
+            }
+            if(card_no.value.trim().length!=12 ||months.value>12||years.value>24||cvv.value.trim().length!=3){
+                alert("Incorrect user info PLEASE TRY AGAIN!!!!");
+                return false;
+            }
+            else{
+                status=true;
+                var bool=confirm("Your Order ID : "+id+"\nOrder status : "+status+"\nArriving in : "+arrival);
+                if(bool==true){
+                    return true;
+                }
+                else{
+                    return false;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

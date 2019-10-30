@@ -1,0 +1,75 @@
+.artworks{
+    margin: auto;
+    overflow: auto;
+    max-width: 1100px;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.3rem;
+    
+}
+.artworks .card a{
+    color: #333;
+    text-decoration: none;
+}
+.artworks-header{
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inconsolata', monospace;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    z-index: 0;
+}
+.artworks-header h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #f1f1f1;
+    line-height: 1;
+}
+.artworks-header h1 span{
+    color: #b50d10;
+}
+.artworks-header p{
+    font-size: 2rem;
+    color: #f1f1f1;
+}
+.artworks .card img{
+    width: 100%;
+    height: 400px;
+}
+.artworks .card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    background: #f1f1f1;
+    margin-bottom: 2rem;
+}
+.artworks .card h3{
+    margin-bottom: 2rem;
+}
+.artworks .card:nth-child(odd) img{
+    order: 2;
+}
+.artworks .card div{
+    padding: 2rem;
+}
+.artworks .card .btn{
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+}
+.artworks .card .btn:hover{
+    opacity: 0.8;
+}
+@media(max-width : 700px){
+    .artworks .card{
+        display: block;
+    }
+}
+
+

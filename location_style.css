@@ -1,0 +1,208 @@
+body{
+	box-sizing: border-box;
+	/*background-image: url("Dutch_River.jpg");*/
+	
+	padding: 0;
+	margin: 0;
+}
+#image{
+	background-image: url("images/contact-form-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 550px;
+}
+h1{
+	font-family: font-family: 'Luckiest Guy', cursive;
+	font-weight: bold;
+	font-size: 100px;
+	margin-top: 220px;
+	text-align: center;
+	color:  white;
+	opacity: .4;
+}
+h4{
+	color: white;
+	
+}
+#image ul li{
+	color: white;
+	list-style: none;
+	display: inline-block;
+	margin: 0px;
+	padding: 10px 10px 10px 10px;
+	float: left;
+}
+h2{
+	padding: 40px 0px;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Yeseva One', cursive;
+	font-weight: 100;
+	letter-spacing: 4px;
+}
+#iamge div h3,p{
+	text-align: justify;
+}
+.row img{
+	height: 200px;
+	width: 180px;
+}
+#para{
+	text-align: center;
+	color:white; 
+	margin-top:20px;
+}
+.row{
+	margin: 0px 0px 10px 0pxS;
+}
+h3{
+	font-family: 'Unna', serif;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.row li:hover{
+	background-color: red;
+	transition: .5s;
+	height: 35px;
+	text-decoration: underline;
+}
+#icon:hover{
+	opacity: .5;
+}
+.container img:hover{
+	opacity: .7;
+}
+.row a:hover{
+	opacity: .9;
+}
+h2:hover{
+	color: #ff6f69;
+}
+h1:hover{
+	opacity: 1;
+}
+h4{
+	font-variant:small-caps;
+	font-size: 20px;
+}
+h4:hover{
+	color: #ffeead;
+	font-size: 30px;
+}
+#web{
+	color: white;
+	opacity: .5;
+	margin: 5px;
+}
+#para:hover{
+	font-size: 20px;
+	opacity: .5;
+}
+
+#opp{
+	padding: -200px 20px 0px 20px;
+	margin: 0px;
+	margin: 20px 0px 0px 0px;
+	background-color: red;
+
+}
+#opp h1{
+	color: white;
+	font-size:50px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.container-fluid h3{
+	text-align: center;
+	margin-bottom: 100px;
+}
+.row a{
+	text-decoration: none;
+}
+h5{
+	text-align: center;
+}
+#gallery{
+	margin-top:0px;
+	background-color: #a3fcac;
+	padding-bottom: 30px;
+}
+#gallery h2{
+	margin-top: 0px;
+	color: white;
+	height: 80px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	text-shadow: 4px 4px 8px #000000;
+}
+#gallery img{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	box-shadow: 4px 4px 8px #000000;
+}
+#gallery .row{
+	padding: 0px;
+}
+#wall{
+	background-color: #a3fcac;
+}
+#gallery h2:hover{
+	color: #ffae60;
+}
+.active{
+	background-color: red;
+	height: 35px;
+}
+#last{ 
+	background-color: black;
+}
+#last h2{
+	color: white;
+	font-size: 30px;
+	margin-top: 30px;
+}
+#last p{
+	text-align: center;
+	color: white;
+	opacity: .7;
+	letter-spacing: 2px;
+	font-weight: normal;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+#last input{
+	background-color: black;
+}
+#last form{
+	opacity: .7;
+	color: white;
+	padding: 20px;
+	border: 1.5px solid gray;
+	border-radius: 3px;
+	font-weight: 100;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+#but{
+	color: white;
+	background-color: red;
+	border: none;
+	text-align: center;
+	margin-left: 170px;
+	width: 150px;
+	height: 30px;
+	border-radius: 3px;
+	font-size: 15px;
+}
+#last button:hover{
+	background-color: green;
+	transition: .5s;
+}
+.row img{
+	border-radius: 6px;
+}
