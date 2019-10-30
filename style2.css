@@ -1,0 +1,230 @@
+.parent{
+    display: -webkit-inline-box;
+    overflow: hidden;
+    width:100%;
+}
+
+div.myDiv {
+    width: 200px;
+    height: 200px;
+    margin: 41px 189px 79px -98px;
+    border: 2px solid freen;
+    float:left;
+    overflow: hidden;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg); /* Standard syntax */
+}
+div.myDiv:nth-child(even){
+    margin: -100px 39px 0px -248px;
+}
+
+.myDiv img{
+    width: 142%;
+    height: 142%;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin: -41px;
+    
+}
+
+.myDiv img:hover {
+    opacity: 0.7;
+    width : 200%;
+    height: 200%;
+    margin: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
+}
+.plate {
+  width: 410px;
+  margin: 10% auto;
+}
+.shadow {
+  color: #fff;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #fff,
+    5px 5px 0 #fff,
+    6px 6px 0 #fff,
+    7px 7px 0 #fff;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background-color: #222;
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+.text1 {
+  font-size: 80px;
+}
+.text2 {
+  font-size: 190px;
+}
+.text3 {
+  font-size: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Amatic SC', cursive;
+}
+.block{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+}
+.block h2{
+  position: relative;
+  display: block;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10vw;
+  color: white;
+  font-weight: 400;
+}
+.img-parallax {
+  width: 100vmax;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  pointer-events: none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          @import "compass/css3";
+
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+
+article {
+ -moz-column-width: 13em;
+ -webkit-column-width: 13em;
+ -moz-column-gap: 1em;
+ -webkit-column-gap: 1em; 
+  
+}
+
+section {
+ display: inline-block;
+ margin:  0.25rem;
+ padding:  1rem;
+ width:  100%; 
+ background:  #efefef;
+}
+
+
+p {
+ margin:  1rem 0; 
+}
+
+
+
+
+h1 {
+  font-size:  3rem;
+  font-weight:  800;
+}
+
+body {
+  line-height:  1.25;
+}
+
+
+p {
+ text-align:  left;
+}
+
+
+
+
+
+
+  
